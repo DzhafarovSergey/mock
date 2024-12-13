@@ -23,7 +23,8 @@ func (s *AuthService) ValidateCredentials(request models.OAuthRequest) (string, 
 	validSecretKey := conf.SecretKey
 
 	if request.ClientId != validClientId || request.SecretKey != validSecretKey {
-		return "", errors.New("Invalid credentians")
+		return "", errors.New("invalid request")
+
 	}
 
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
