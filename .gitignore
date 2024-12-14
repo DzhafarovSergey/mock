@@ -23,3 +23,9 @@ go.work.sum
 
 cert/*
 !cert/.keep
+templates/group/*
+!templates/group/.keep
+templates/host_group/*
+!templates/host_group/.keep
+templates/metrics/*
+!templates/metrics/.keep*
