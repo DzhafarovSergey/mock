@@ -1,9 +1,9 @@
 package services
 
-type HostService struct {
+type GroupService struct {
 	*GenericService
 }
 
-func NewHostService() *HostService {
-	return &HostService{NewGenericService("host")}
+func NewHostService() *GroupService {
+	return &GroupService{NewGenericService("host")}
 }
